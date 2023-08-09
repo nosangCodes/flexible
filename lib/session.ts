@@ -24,6 +24,8 @@ export const authOptions: NextAuthOptions = {
     async session({ session }) {
         return session;
     },
-    async signIn({ user }: {user: AdapterUser | User}) {},
+    async signIn({ user }: {user: AdapterUser | User}) {
+      // get user from database
+    },
   },
 };
